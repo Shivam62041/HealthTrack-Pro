@@ -1,0 +1,55 @@
+# HealthTrack Pro — .gitignore
+
+# ── Java / Maven ────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/
+mvnw
+mvnw.cmd
+
+# ── IDE ─────────────────────────────────────────────────────
+.idea/
+*.iml
+.eclipse/
+.classpath
+.project
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/settings.json
+
+# ── Node / NPM ───────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production
+
+# ── Environment files ────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Docker ───────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── Test reports ─────────────────────────────────────────────
+backend/target/surefire-reports/
+backend/target/jacoco.exec
